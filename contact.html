@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Reach out to Aura support or browse our FAQs.">
+  <title>Aura — Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="css/style.css?v=1.3">
+</head>
+<body>
+
+  <div class="glow glow-1"></div>
+  <div class="glow glow-2"></div>
+
+  <header class="header">
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <span class="logo-dot"></span>
+        Aura<span class="logo-accent">.</span>
+      </a>
+
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="articles.html" class="nav-link">Articles</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="#subscribe" class="nav-link" id="nav-sub-btn">Subscribe</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-outline btn-sm" id="bookmark-nav-btn" title="Saved Articles">
+          <i data-lucide="bookmark" class="icon-xs" style="margin-right: 6px;"></i>
+          <span>Saved</span>
+          <span class="btn-badge" id="bookmark-count">0</span>
+        </button>
+
+        <button class="btn btn-primary btn-sm" id="contact-nav-btn">
+          Contact Us
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-container">
+      <div class="hero-eyebrow">
+        <i data-lucide="help-circle" class="icon-xs"></i>
+        <span>Support &amp; Inquiry</span>
+      </div>
+      <h1 class="hero-title">Connect with <span class="gradient-text">Aura</span>.</h1>
+      <p class="hero-subtitle">Have a question about partnerships, guest blogging, or feedback? Drop us a line.</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <section class="contact-section" id="contact">
+      <div class="contact-card">
+        <form class="contact-form" id="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contact-name">Name</label>
+              <input type="text" id="contact-name" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Email</label>
+              <input type="email" id="contact-email" placeholder="john@example.com" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="contact-subject">Subject</label>
+            <input type="text" id="contact-subject" placeholder="What is this about?" required>
+          </div>
+          <div class="form-group">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" rows="5" placeholder="Your message here..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+        <div class="contact-info-panel">
+          <h3>Contact Info</h3>
+          <p>We typically respond within 24 hours.</p>
+          <div class="contact-info-items">
+            <div class="contact-info-item">
+              <i data-lucide="mail" class="icon-sm"></i>
+              <span>hello@aurablog.com</span>
+            </div>
+            <div class="contact-info-item">
+              <i data-lucide="map-pin" class="icon-sm"></i>
+              <span>San Francisco, CA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-container">
+      <div class="section-header">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-desc">Quick answers to common questions about Aura platform.</p>
+      </div>
+      <div class="faq-accordion" id="faq-accordion">
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I submit articles to Aura?</span>
+            <i data-lucide="plus" class="icon-sm"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Yes! We welcome guest writers who specialize in design systems, developer workflows, philosophy, and productivity architectures. Use the contact form above to pitch your ideas.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Is the newsletter free?</span>
+            <i data-lucide="plus" class="icon-sm"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Absolutely. The newsletter contains digests of our monthly articles, curated design links, and productivity framework breakdowns, and is completely free of charge.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do Saved Articles work?</span>
+            <i data-lucide="plus" class="icon-sm"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Articles you bookmark are saved locally in your browser's localStorage. You can view them anytime by clicking the "Saved" button in the navigation header, even if you refresh or close the page.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand-col">
+        <a href="index.html" class="logo">
+          <span class="logo-dot"></span>
+          Aura<span class="logo-accent">.</span>
+        </a>
+        <p class="footer-brand-desc">High-fidelity breakdowns of design systems, engineering tools, and modern productivity frameworks.</p>
+        <div class="about-socials">
+          <a href="#" class="social-link"><i data-lucide="twitter" class="icon-xs"></i></a>
+          <a href="#" class="social-link"><i data-lucide="github" class="icon-xs"></i></a>
+          <a href="#" class="social-link"><i data-lucide="linkedin" class="icon-xs"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-nav-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="articles.html">Publications</a></li>
+          <li><a href="about.html">About Mission</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-nav-col">
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="articles.html?category=tech">Tech &amp; AI</a></li>
+          <li><a href="articles.html?category=design">Design Systems</a></li>
+          <li><a href="articles.html?category=productivity">Productivity</a></li>
+          <li><a href="articles.html?category=philosophy">Philosophy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-newsletter-col">
+        <h4>Join Aura Newsletter</h4>
+        <p>Get monthly digests of the best content directly in your inbox.</p>
+        <form class="footer-newsletter-form" id="footer-newsletter-form">
+          <input type="email" placeholder="youremail@domain.com" required aria-label="Email Address">
+          <button type="submit" class="btn btn-primary btn-sm"><i data-lucide="arrow-right" class="icon-xs"></i></button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Aura Platform. Built with engineering excellence. All rights reserved.</p>
+      <ul class="footer-bottom-links">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="contact.html">Contact Support</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="bookmarks-modal">
+    <div class="modal modal-md">
+      <div class="modal-header">
+        <h2>Saved Articles</h2>
+        <button class="close-btn" id="bookmarks-close">
+          <i data-lucide="x" class="icon-sm"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div id="bookmarks-list" class="bookmarks-list">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="sub-modal">
+    <div class="modal modal-sm">
+      <div class="modal-header">
+        <h2>Subscribe to Aura</h2>
+        <button class="close-btn" id="sub-close">
+          <i data-lucide="x" class="icon-sm"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-intro">Get monthly digests of the best technical writing, design theory, and productivity setups delivered straight to your inbox.</p>
+        <form class="modal-form" id="sub-form">
+          <div class="form-group">
+            <input type="email" placeholder="youremail@domain.com" required aria-label="Email Address">
+          </div>
+          <button type="submit" class="btn btn-primary w-full">Join Newsletter</button>
+        </form>
+        <p class="modal-note">No spam. Unsubscribe at any time.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="article-detail-modal">
+    <div class="modal modal-lg">
+      <div class="modal-header border-none">
+        <div class="modal-actions-top">
+          <button class="modal-action-btn" id="detail-bookmark-btn" title="Save Article">
+            <i data-lucide="bookmark" class="icon-sm"></i>
+          </button>
+        </div>
+        <button class="close-btn" id="detail-close">
+          <i data-lucide="x" class="icon-sm"></i>
+        </button>
+      </div>
+      <div class="modal-body" id="detail-modal-body">
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
